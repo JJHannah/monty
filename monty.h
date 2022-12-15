@@ -16,15 +16,16 @@
 #define MONTY_ERROR_PINT_EMPTY 4
 #define MONTY_ERROR_POP_EMPTY 5
 
-typedef struct monty_s{
- char  *save_ptr;
- int line;
- char *token;
- int mode;
- int error;
+typedef struct monty_s
+{
+char  *save_ptr;
+int line;
+char *token;
+int mode;
+int error;
 } monty_t;
 
-extern char* operand;
+extern char *operand;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -36,9 +37,9 @@ extern char* operand;
  */
 typedef struct stack_s
 {
-	int n;
-	struct stack_s *prev;
-	struct stack_s *next
+int n;
+struct stack_s *prev;
+struct stack_s *next
 } stack_t;
 
 /**
