@@ -47,7 +47,7 @@ struct stack_s *next
  * @opcode: the opcode
  * @f: function to handle the opcode
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO project 
+ * for stack, queues, LIFO,FIFO project
  */
 typedef struct instruction_s
 {
@@ -58,7 +58,7 @@ typedef struct instruction_s
 /**
  * struct line_s - line content and its number
  * @content: line content
- * @number: line number 
+ * @number: line number
  * Description: stores line of the monty source code
  */
 typedef struct line_s
@@ -78,6 +78,6 @@ char **split_line(char *line);
 void (*get_op_func(char *s))(stack_t**, unsigned int);
 void free_lines(line_t *head);
 void free_stack(stack_t *head);
-int _atoi(char *s, int* n);
+int _atoi(char *s, int *n);
 
 #endif
